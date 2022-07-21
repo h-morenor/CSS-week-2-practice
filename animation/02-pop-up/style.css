@@ -31,17 +31,18 @@ button {
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0%;
+  left: 32.5%;
+  /*transform-origin: center;
+  transform: translate(-50%, -50%);*/
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transition: all 1s;
 }
 .popup-modal p {
-  margin-bottom: 24px
+  margin-bottom: 24px;
 }
 
 .backdrop {
@@ -55,9 +56,9 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  transform: translate(-0%, 150%);
 }
 
 .backdrop.show {
   opacity: 30%;
 }
-
